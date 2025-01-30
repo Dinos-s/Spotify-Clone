@@ -6,9 +6,10 @@
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <title>Spotify-Clone</title>
     
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/vars.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main-content.css">
 
     <!-- Links do fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -69,6 +70,40 @@
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header_navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+
+                    <button class="arrow-right">
+                        <img src="./assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+
+                <div class="header_search">
+                    <img src="./assets/icons/search.png" alt="">
+                    <input type="text" id="search-input" maxlength="800" placeholder="O que você quer ouvir?"/>
+                </div>
+
+                <div class="header_login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+            <div class="playlist-container">
+                <div class="result-playlists">
+                    <div class="playlist">
+                        <h1 id="greeting">Boas Vindas</h1>
+                        <h2 class="greeting-subtitle">Navegar</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="disclaimer-premium">
         <div class="text">
